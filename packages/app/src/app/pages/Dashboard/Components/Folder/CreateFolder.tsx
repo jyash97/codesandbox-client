@@ -38,7 +38,6 @@ export const CreateFolder = ({ basePath, setCreating }: DashboardNewFolder) => {
 
   const onSubmit = async (event?: React.FormEvent<HTMLFormElement>) => {
     if (event) event.preventDefault();
-
     setCreating(false);
     if (newName && newName.trim()) {
       const newFolderPath = join('/', basePath, newName);
